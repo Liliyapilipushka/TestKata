@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class Main {
     public static void main (String[] args) throws IOException {
-        System.out.println("Введите выражение и нажмите «Enter»");
+        System.out.println("Введите выражение, используя пробелы, и нажмите «Enter»");
         System.out.println("Чтобы прекратить работу, введите слово «Ex» и нажмите «Enter»");
         Scanner console = new Scanner(System.in);
         String inp1;
