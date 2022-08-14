@@ -15,9 +15,7 @@ public class Main {
             String result2 = calc(input);
             System.out.println(result2);
         } while (true);
-
     }
-
     public static String calc(String input) throws IOException {
             String inp1;
             String inp2;
@@ -39,7 +37,6 @@ public class Main {
                     "LXXI", "LXXII", "LXXIII", "LXXIV", "LXXV", "LXXVI", "LXXVII", "LXXVIII", "LXXIX", "LXXX",
                     "LXXXI", "LXXXII", "LXXXIII", "LXXXIV", "LXXXV", "LXXXVI", "LXXXVII", "LXXXVIII", "LXXXIX", "XC",
                     "XCI", "XCII", "XCIII", "XCIV", "XCV", "XCVI", "XCVII", "XCVIII", "XCIX", "C"};
-            calc(input);
             String[] INPUT = input.split(" ");
             size = INPUT.length;
             if (size != 3) {
@@ -85,7 +82,7 @@ public class Main {
                 } else
                     throw new IOException("Результатом работы калькулятора с римскими числами могут быть только положительные числа");
             } else {
-                    result2 = "Ошибка. Значение обеих операнд должно быть записано целыми римскими или арабскими числами от 1 до 10";
+                throw new IOException("Результатом работы калькулятора с римскими числами могут быть только положительные числа");
             }
     return result2;
     }
